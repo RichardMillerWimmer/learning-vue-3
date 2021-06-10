@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "title": "welcome to the blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Lectus quam id leo in vitae turpis massa sed. Congue quisque egestas diam in arcu cursus euismod quis viverra. Sem nulla pharetra diam sit. Consequat id porta nibh venenatis. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Amet massa vitae tortor condimentum lacinia quis vel eros. Nunc id cursus metus aliquam eleifend mi in nulla. Mauris a diam maecenas sed enim ut sem. Condimentum vitae sapien pellentesque habitant morbi. Lorem donec massa sapien faucibus. Lacus vestibulum sed arcu non odio. Tempor orci eu lobortis elementum nibh tellus molestie.",
+      "id": 1,
+      "tags": ["webdev", "coding", "news"]
+    },
+    {
+      "title": "top 5 css tricks",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed egestas egestas fringilla phasellus faucibus. In nisl nisi scelerisque eu. Elementum curabitur vitae nunc sed velit dignissim sodales ut. Tortor dignissim convallis aenean et tortor at risus viverra adipiscing. Id diam vel quam elementum pulvinar etiam. Sagittis vitae et leo duis ut diam quam. A erat nam at lectus urna duis convallis.",
+      "id": 2,
+      "tags": ["css", "coding", "webdev"]
+    }
+  ]
+}
