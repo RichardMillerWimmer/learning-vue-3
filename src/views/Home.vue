@@ -4,6 +4,7 @@
     <input v-model="search" type="text" placeholder="search" />
     <p>search term - {{ search }}</p>
     <div v-for="(name, index) in matchingNames" :key="index">{{ name }}</div>
+    <button @click="handleClick">stop watch</button>
     <!-- <p>{{ name }}</p> -->
     <!-- <h3>refs</h3>
     <p>{{ ninjaOne.name }} - {{ ninjaOne.age }}</p>
@@ -20,7 +21,7 @@
 
 <script>
 import { ref, reactive } from "@vue/reactivity";
-import { computed } from "@vue/runtime-core";
+import { computed, watch, watchEffect } from "@vue/runtime-core";
 
 export default {
   name: "Home",
@@ -32,6 +33,30 @@ export default {
 
     const search = ref("");
     const names = ref(["mario", "luigi", "yoshi", "toad", "peach", "bowser"]);
+
+    watch(search, () => {
+      // watching for changes in search
+      console.log('watch hit')
+    })
+    const stopWatch = watch(search, () => {
+      // watching for changes in search
+      console.log('watch hit')
+    })
+
+    watchEffect(() => {
+      // runs on initail load
+      console.log('watchEffect hit')
+    })
+    // watchEffect(() => {
+    //   // runs value change of second argument in console.log
+    //   console.log('watchEffect hit', search.value)
+    // })
+
+    // this stops the watch also works on watchEffect
+    const handleClick = () => {
+      stopWatch()
+    }
+
     const matchingNames = computed(() => {
       return names.value.filter((name) => {
         return name.includes(search.value);
@@ -63,7 +88,7 @@ export default {
     // para.value.textContent = "hello there"
     // }
 
-    return { matchingNames, search };
+    return { matchingNames, search, handleClick };
   },
   // created() {
   //   console.log('created')
