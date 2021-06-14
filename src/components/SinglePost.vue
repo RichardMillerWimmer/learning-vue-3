@@ -16,7 +16,7 @@ export default {
     const snippet = computed(() => {
       return props.post.body.substring(0, 100) + "...";
     });
-    console.log(props.post);
+    // console.log(props.post);
     return { snippet };
   },
 };
